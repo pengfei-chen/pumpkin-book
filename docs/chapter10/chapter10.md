@@ -20,7 +20,7 @@ P(e r r) &=1-\sum_{c \in \mathcal{Y}} P(c | \boldsymbol{x}) P(c | \boldsymbol{z}
 \end{aligned}
 $$
 
-[解析]：第二个式子是来源于前提假设"假设样本独立同分布，且对任意$x$和任意小正数$\delta$，在$x$附近$\delta$距离范围内总能找到一个训练样本"，假设所有$\delta$中最小的$\delta$组成和$\boldsymbol{x}$同一维度的向量$\boldsymbol{\delta}$则$P(c | \boldsymbol{z}) = P(c | \boldsymbol{x\pm\delta})\simeq P(c|\boldsymbol{x})$。第三个式子是应为$c^{*}\in\mathcal{Y}$，因此$P^{2}\left(c^{*} | \boldsymbol{x}\right)$是$\sum_{c \in \mathcal{Y}} P^{2}(c | \boldsymbol{x})$的一个分量，所以$\sum_{c \in \mathcal{Y}} P^{2}(c | \boldsymbol{x}) \geqslant P^{2}\left(c^{*} | \boldsymbol{x}\right)$。第四个式子是平方差公式展开，最后一个式子因为$1 + P^{2}\left(c^{*} | \boldsymbol{x}\right)\leqslant 2$。
+[解析]：第二个式子是来源于前提假设"假设样本独立同分布，且对任意$x$和任意小正数$\delta$，在$x$附近$\delta$距离范围内总能找到一个训练样本"，假设所有$\delta$中最小的$\delta$组成和$\boldsymbol{x}$同一维度的向量$\boldsymbol{\delta}$则$P(c | \boldsymbol{z}) = P(c | \boldsymbol{x\pm\delta})\simeq P(c|\boldsymbol{x})$。第三个式子是应为$c^{*}\in\mathcal{Y}$，因此$P^{2}\left(c^{*} | \boldsymbol{x}\right)$是$\sum_{c \in \mathcal{Y}} P^{2}(c | \boldsymbol{x})$的一个分量，所以$\sum_{c \in \mathcal{Y}} P^{2}(c | \boldsymbol{x}) \geqslant P^{2}\left(c^{*} | \boldsymbol{x}\right)$。第四个式子是平方差公式展开，最后一个式子因为$1 + P\left(c^{*} | \boldsymbol{x}\right)\leqslant 2$。
 
 
 
@@ -48,7 +48,7 @@ $$
 ## 10.4
 
 $$
-\sum^m_{i=1}dist^2_{ij}=tr(\boldsymbol B)+mb_{jj}
+\sum^m_{i=1}dist^2_{ij}=\operatorname{tr}(\boldsymbol B)+mb_{jj}
 $$
 
 [解析]：首先根据式10.3有
@@ -119,7 +119,7 @@ $$
 由公式（10.6）和（10.9）可得
 $$
 \begin{aligned}
-tr(\boldsymbol B)&=\frac{1}{2m}\sum^m_{i=1}\sum^m_{j=1}dist^2_{ij}\\
+\operatorname{tr}(\boldsymbol B)&=\frac{1}{2m}\sum^m_{i=1}\sum^m_{j=1}dist^2_{ij}\\
 &=\frac{m}{2}dist^2_{\cdot}
 \end{aligned}
 $$
@@ -133,7 +133,7 @@ $$
 由公式（10.5）和（10.7）可得
 $$
 \begin{aligned}
-b_{ii}&=\frac{1}{m}\sum^m_{j=1}dist^2_{ij}-\frac{1}{m}tr(\boldsymbol B)\\
+b_{ii}&=\frac{1}{m}\sum^m_{j=1}dist^2_{ij}-\frac{1}{m}\operatorname{tr}(\boldsymbol B)\\
 &=dist^2_{i\cdot}-\frac{1}{2}dist^2_{\cdot}
 \end{aligned}
 $$
@@ -318,7 +318,7 @@ $$
 $$
 
 
-其中$\boldsymbol{I}=(1,1,...,1)\in \mathbb{R}^{n\times 1}$为$n$行1列的单位向量。因此，上述优化问题可以重写为
+其中$\boldsymbol{I}=(1,1,...,1)\in \mathbb{R}^{n\times 1}$为$n$行1列的元素值全为1的向量。因此，上述优化问题可以重写为
 $$
 \begin{aligned} 
 \min _{\boldsymbol{w}_{1}, \boldsymbol{w}_{2}, \ldots, \boldsymbol{w}_{m}} & \sum_{i=1}^{m}\boldsymbol{w_i}^{\mathrm{T}}\mathbf{X}_i^{\mathrm{T}}\mathbf{X}_i\boldsymbol{w_i} \\ 
@@ -379,7 +379,7 @@ $$
 ## 10.31
 $$
 \begin{aligned}
-&\min\limits_{\boldsymbol Z}tr(\boldsymbol Z \boldsymbol M \boldsymbol Z^T)\\
+&\min\limits_{\boldsymbol Z}\operatorname{tr}(\boldsymbol Z \boldsymbol M \boldsymbol Z^T)\\
 &s.t. \boldsymbol Z^T\boldsymbol Z=\boldsymbol I. 
 \end{aligned}
 $$
@@ -393,12 +393,11 @@ $$
 &=\sum^m_{i=1}\|\boldsymbol Z(\boldsymbol I_i-\boldsymbol W_i)\|^2_2\\
 &=\sum^m_{i=1}(\boldsymbol Z(\boldsymbol I_i-\boldsymbol W_i))^T\boldsymbol Z(\boldsymbol I_i-\boldsymbol W_i)\\
 &=\sum^m_{i=1}(\boldsymbol I_i-\boldsymbol W_i)^T\boldsymbol Z^T\boldsymbol Z(\boldsymbol I_i-\boldsymbol W_i)\\
-&=tr((\boldsymbol I-\boldsymbol W)^T\boldsymbol Z^T\boldsymbol Z(\boldsymbol I-\boldsymbol W))\\
-&=tr(\boldsymbol Z(\boldsymbol I-\boldsymbol W)(\boldsymbol I-\boldsymbol W)^T\boldsymbol Z^T)\\
-&=tr(\boldsymbol Z\boldsymbol M\boldsymbol Z^T)
+&=\operatorname{tr}((\boldsymbol I-\boldsymbol W)^T\boldsymbol Z^T\boldsymbol Z(\boldsymbol I-\boldsymbol W))\\
+&=\operatorname{tr}(\boldsymbol Z(\boldsymbol I-\boldsymbol W)(\boldsymbol I-\boldsymbol W)^T\boldsymbol Z^T)\\
+&=\operatorname{tr}(\boldsymbol Z\boldsymbol M\boldsymbol Z^T)
 \end{aligned}
 $$
-
 
 其中，$\boldsymbol M=(\boldsymbol I-\boldsymbol W)(\boldsymbol I-\boldsymbol W)^T$。
 [解析]：约束条件$\boldsymbol Z^T\boldsymbol Z=\boldsymbol I$是为了得到标准化（标准正交空间）的低维数据。

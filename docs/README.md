@@ -1,5 +1,13 @@
-# 南瓜书PumpkinBook
-[简体中文](https://github.com/datawhalechina/pumpkin-book/blob/master/README.md) | [French](https://github.com/datawhalechina/pumpkin-book/blob/master/README_french.md)
+<div align=center>
+<img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/pumpkin.png" >
+<h1>南瓜书PumpkinBook</h1>
+<p>
+<a href="https://github.com/datawhalechina/pumpkin-book/blob/master/README.md">简体中文</a> | <a href="https://github.com/datawhalechina/pumpkin-book/blob/master/README_french.md">Français</a>
+</p>
+<p>
+<strong>配套视频教程：https://www.bilibili.com/video/BV1Mh411e7VU</strong>
+</p>
+</div>
 
 “周志华老师的《机器学习》（西瓜书）是机器学习领域的经典入门教材之一，周老师为了使尽可能多的读者通过西瓜书对机器学习有所了解, 所以在书中对部分公式的推导细节没有详述，但是这对那些想深究公式推导细节的读者来说可能“不太友好”，本书旨在对西瓜书里比较难理解的公式加以解析，以及对部分公式补充具体的推导细节。”
 
@@ -8,8 +16,8 @@
 ## 使用说明
 - 南瓜书的所有内容都是以西瓜书的内容为前置知识进行表述的，所以南瓜书的最佳使用方法是以西瓜书为主线，遇到自己推导不出来或者看不懂的公式时再来查阅南瓜书；
 - 对于初学机器学习的小白，西瓜书第1章和第2章的公式**强烈不建议深究**，简单过一下即可，等你学得有点飘的时候再回来啃都来得及；
-- 每个公式的解析和推导我们都力(zhi)争(neng)以本科数学基础的视角进行讲解，所以超纲的数学知识我们通常都会以附录和参考文献的形式给出，感兴趣的同学可以继续沿着我们给的资料进行深入学习；
-- 若南瓜书里没有你想要查阅的公式，或者你发现南瓜书哪个地方有错误，请毫不犹豫地去我们GitHub的Issues（ 地址：https://github.com/datawhalechina/pumpkin-book/issues ）进行反馈，在对应版块提交你希望补充的公式编号或者勘误信息，我们通常会在24小时以内给您回复，超过24小时未回复的话可以邮件联系我们（微信：at-Sm1les）；
+- 每个公式的解析和推导我们都力争以本科数学基础的视角进行讲解，所以超纲的数学知识我们通常都会以附录和参考文献的形式给出，感兴趣的同学可以继续沿着我们给的资料进行深入学习；
+- 若南瓜书里没有你想要查阅的公式，或者你发现南瓜书哪个地方有错误，请毫不犹豫地去我们GitHub的Issues（ 地址：https://github.com/datawhalechina/pumpkin-book/issues ）进行反馈，在对应版块提交你希望补充的公式编号或者勘误信息，我们通常会在24小时以内给您回复，超过24小时未回复的话可以微信联系我们（微信号：at-Sm1les）；
 
 ### 纸质版
 <img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/nangua.jpg" width="300">
@@ -20,7 +28,7 @@
 
 配套视频教程：https://www.bilibili.com/video/BV1Mh411e7VU
 
-### 在线阅读（内容实时更新）
+### 在线阅读（仅供第1版）
 地址：https://datawhalechina.github.io/pumpkin-book
 
 ### 最新版PDF下载
@@ -32,26 +40,6 @@ PDF版本是我们寄送出版社的全书初稿，经由人民邮电出版社�
 
 <center class="half"><img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/yanggao1.jpg" width="300"><img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/yanggao2.jpg" width="300"></center>
 
-
-
-### 目录
-- 第1章 [绪论](https://datawhalechina.github.io/pumpkin-book/#/chapter1/chapter1)
-- 第2章 [模型评估与选择](https://datawhalechina.github.io/pumpkin-book/#/chapter2/chapter2)
-- 第3章 [线性模型](https://datawhalechina.github.io/pumpkin-book/#/chapter3/chapter3)
-- 第4章 [决策树](https://datawhalechina.github.io/pumpkin-book/#/chapter4/chapter4)
-- 第5章 [神经网络](https://datawhalechina.github.io/pumpkin-book/#/chapter5/chapter5)
-- 第6章 [支持向量机](https://datawhalechina.github.io/pumpkin-book/#/chapter6/chapter6)
-- 第7章 [贝叶斯分类器](https://datawhalechina.github.io/pumpkin-book/#/chapter7/chapter7)
-- 第8章 [集成学习](https://datawhalechina.github.io/pumpkin-book/#/chapter8/chapter8)
-- 第9章 [聚类](https://datawhalechina.github.io/pumpkin-book/#/chapter9/chapter9)
-- 第10章 [降维与度量学习](https://datawhalechina.github.io/pumpkin-book/#/chapter10/chapter10)
-- 第11章 [特征选择与稀疏学习](https://datawhalechina.github.io/pumpkin-book/#/chapter11/chapter11)
-- 第12章 [计算学习理论](https://datawhalechina.github.io/pumpkin-book/#/chapter12/chapter12)
-- 第13章 [半监督学习](https://datawhalechina.github.io/pumpkin-book/#/chapter13/chapter13)
-- 第14章 [概率图模型](https://datawhalechina.github.io/pumpkin-book/#/chapter14/chapter14)
-- 第15章 [规则学习](https://datawhalechina.github.io/pumpkin-book/#/chapter15/chapter15)
-- 第16章 [强化学习](https://datawhalechina.github.io/pumpkin-book/#/chapter16/chapter16)
-
 ### 选用的西瓜书版本
 <img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/xigua.jpg" width="150" height= "175">
 
@@ -61,16 +49,21 @@ PDF版本是我们寄送出版社的全书初稿，经由人民邮电出版社�
 ## 编委会
 | 职责 | 名单 |
 | :---: | :---: |
-| **主编** | [@Sm1les](https://github.com/Sm1les) [@archwalker](https://github.com/archwalker) |
-| **编委** | [@jbb0523](https://blog.csdn.net/jbb0523) [@juxiao](https://github.com/juxiao) [@Majingmin](https://github.com/Majingmin) [@MrBigFan](https://github.com/MrBigFan) [@shanry](https://github.com/shanry) [@Ye980226](https://github.com/Ye980226) |
+| **主编** | [@Sm1les](https://github.com/Sm1les) [@archwalker](https://github.com/archwalker) [@jbb0523](https://blog.csdn.net/jbb0523)|
+| **编委** | [@juxiao](https://github.com/juxiao) [@Majingmin](https://github.com/Majingmin) [@MrBigFan](https://github.com/MrBigFan) [@shanry](https://github.com/shanry) [@Ye980226](https://github.com/Ye980226) |
+
+## 封面设计
+| 构思 | 创作 |
+| :---: | :---: |
+| [@Sm1les](https://github.com/Sm1les) | 林王茂盛 | 
 
 ## 致谢
-特别感谢[@awyd234](https://github.com/awyd234)、[@feijuan](https://github.com/feijuan)、[@Ggmatch](https://github.com/Ggmatch)、[@Heitao5200](https://github.com/Heitao5200)、[@huaqing89](https://github.com/huaqing89)、[@LongJH](https://github.com/LongJH)、[@LilRachel](https://github.com/LilRachel)、[@LeoLRH](https://github.com/LeoLRH)、[@Nono17](https://github.com/Nono17)、[@spareribs](https://github.com/spareribs)、[@sunchaothu](https://github.com/sunchaothu)、[@StevenLzq](https://github.com/StevenLzq) 在最早期的时候对南瓜书所做的贡献。
+特别感谢[@awyd234](https://github.com/awyd234)、[@feijuan](https://github.com/feijuan)、[@Ggmatch](https://github.com/Ggmatch)、[@Heitao5200](https://github.com/Heitao5200)、[@xhqing](https://github.com/xhqing)、[@LongJH](https://github.com/LongJH)、[@LilRachel](https://github.com/LilRachel)、[@LeoLRH](https://github.com/LeoLRH)、[@Nono17](https://github.com/Nono17)、[@spareribs](https://github.com/spareribs)、[@sunchaothu](https://github.com/sunchaothu)、[@StevenLzq](https://github.com/StevenLzq) 在最早期的时候对南瓜书所做的贡献。
 
 ## 关注我们
 <div align=center>
-<p>扫描下方二维码，然后回复关键词“南瓜书”，即可加入“南瓜书读者交流群”</p>
-<img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/qrcode.jpeg" width = "250" height = "270" alt="Datawhale是一个专注AI领域的开源组织，以“for the learner，和学习者一起成长”为愿景，构建对学习者最有价值的开源学习社区。关注我们，一起学习成长。">
+<p>扫描下方二维码关注公众号：Datawhale，然后回复关键词“南瓜书”，即可加入“南瓜书读者交流群”</p>
+<img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/qrcode.jpeg" width = "180" height = "180">
 </div>
 
 ## LICENSE
